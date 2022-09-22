@@ -35,7 +35,7 @@ public class Controller {
 
         try{
 
-            log.info("Inside the controller for the Icici callback api : {}", XML.toString(XML.toJSONObject(requestData)));
+            log.info("Inside the controller for the icici callback api : {}", XML.toString(XML.toJSONObject(requestData)));
 
             qrIciciService = getQrIciciServiceObject();
             return  qrIciciService.userMain(requestData);
